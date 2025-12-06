@@ -29,9 +29,10 @@
             align-items: center;
             justify-content: space-between;
             box-shadow: 0 2px 4px rgba(255, 3, 3, 0.1);
-            position: sticky;
+            position: fixed;
             top: 0;
             z-index: 100;
+            width: 100%;
         }
 
         .logo-section {
@@ -460,6 +461,7 @@
 
         .modal.active {
             display: flex;
+            color: white;
         }
 
         .modal-content {
@@ -470,6 +472,7 @@
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
+            margin-top: 100px;
         }
 
         .modal-header {
@@ -477,10 +480,11 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+
         }
 
         .modal-header h2 {
-            color: var(--dark-blue);
+            color: white;
         }
 
         .close-modal {
@@ -779,12 +783,12 @@
 
         .client-info-large h3 {
             margin: 0;
-            color: var(--dark-blue);
+            color: white;
             font-size: 24px;
         }
 
         .client-type {
-            color: var(--gray-medium);
+            color: white;
             margin: 5px 0 0 0;
         }
 
@@ -792,9 +796,11 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            color: white;
         }
 
         .detail-item {
+            color: white;
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -806,7 +812,7 @@
 
         .detail-item label {
             font-weight: 600;
-            color: var(--gray-dark);
+            color: white;
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -815,6 +821,7 @@
         .detail-item span {
             color: var(--gray-dark);
             font-size: 14px;
+            color: white;
         }
 
         .pagination {
@@ -860,8 +867,8 @@
         /* Melhorias para logo em diferentes tamanhos */
         @media (max-width: 1200px) {
             .logo {
-                width: 90px;
-                height: 90px;
+                width: 70px;
+                height: 70px;
             }
         }
 
@@ -908,4 +915,10 @@
             .os-table td {
                 padding: 8px;
             }
-        }
+          }
+         input::placeholder{
+            color: #9e9e9e;
+            opacity: 1;
+         }
+
+      

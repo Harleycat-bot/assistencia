@@ -144,7 +144,7 @@
 
                 <div class="action-card" onclick="abrirNovoCliente()">
                     <div class="action-card-icon">👤</div>
-                    <h3>Novo Cliente</h3>
+                    <h3 >Novo Cliente</h3>
                     <p>Cadastrar novo cliente</p>
                 </div>
 
@@ -270,39 +270,39 @@
     <div class="modal" id="modalNovoCliente">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Novo Cliente</h2>
+                <h2 style="color: #ffffff;">Novo Cliente</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 
             <form id="formNovoCliente">
                 <div class="form-group">
-                    <label for="nomeCliente">Nome Completo *</label>
+                    <label for="nomeCliente" style="color: #ffffff;">Nome Completo<span style="color: hsl(58, 100%, 50%)">*</span></label>
                     <input type="text" id="nomeCliente" name="nome" placeholder="Nome do cliente" required>
                 </div>
 
                 <div class="form-row">
                 <div class="form-group">
-                        <label for="cpfCnpjCliente">CPF/CNPJ *</label>
+                        <label for="cpfCnpjCliente" style="color: #ffffff;">CPF/CNPJ <span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <input type="text" id="cpfCnpjCliente" name="cpfCnpj" placeholder="000.000.000-00" required>
                 </div>
                 <div class="form-group">
-                        <label for="telefoneCliente">Telefone *</label>
+                        <label for="telefoneCliente" style="color: #ffffff;">Telefone <span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <input type="tel" id="telefoneCliente" name="telefone" placeholder="(00) 00000-0000" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="emailCliente">E-mail</label>
+                    <label for="emailCliente" style="color: #ffffff;">E-mail <span style="color: hsl(58, 100%, 50%)">*</span></label>
                     <input type="email" id="emailCliente" name="email" placeholder="cliente@email.com">
                 </div>
 
                 <div class="form-group">
-                    <label for="enderecoCliente">Endereço</label>
+                    <label for="enderecoCliente" style="color: #ffffff;">Endereço <span style="color: hsl(58, 100%, 50%)">*</span></label>
                     <input type="text" id="enderecoCliente" name="endereco" placeholder="Rua, número, bairro">
                 </div>
 
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" onclick="fecharModal()" style="color: #d1fae5;">Cancelar</button>
                     <button type="submit" class="btn btn-primary">Cadastrar Cliente</button>
                 </div>
             </form>
@@ -313,7 +313,7 @@
     <div class="modal" id="modalBuscarCliente">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Buscar Cliente</h2>
+                <h2 style="color: #FFFFFF;">Buscar Cliente</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 

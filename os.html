@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo-section">
-            <button class="icon-btn" id="menuToggle">
+            <button class="icon-btn" id="menuToggle" style="color: #ffffff;" >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -20,11 +20,11 @@
                 </svg>
             </button>
             <div class="logo">
-                <img src="img/ia-system.png" alt="Logo IA Sistem">
+                <img src="img/Logoatend.png" alt="Logo IA Sistem">
             </div>
             <div class="brand">
-                <h2>IA SISTEM</h2>
-                <p>Sistema de Gerenciamento</p>
+                <h2 style="color: #ffffff;">IA SISTEM</h2>
+                <p style="color: #b9ba6b;">Sistema de Gerenciamento</p>
             </div>
         </div>
 
@@ -34,21 +34,21 @@
         </div>
 
         <div class="header-actions">
-            <button class="icon-btn">
+            <button class="icon-btn" style="color: #ffffff;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                 </svg>
                 <span class="notification-badge">5</span>
             </button>
-            <button class="icon-btn">
+            <button class="icon-btn" style="color: #ffffff;">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <circle cx="12" cy="10" r="3"></circle>
                     <path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.834 2.855"></path>
                 </svg>
             </button>
-            <button class="icon-btn" data-logout title="Sair do Sistema">
+            <button class="icon-btn" data-logout title="Sair do Sistema" style="color: #ffffff;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -63,7 +63,7 @@
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-section">
-                <div class="sidebar-title">Módulos</div>
+                <div class="sidebar-title" style="color: #b9ba6b;">Módulos</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Dashboard</a></li>
                     <li><a href="atendimento.html">Atendimento</a></li>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title">Ajuda</div>
+                <div class="sidebar-title" style="color: #b9ba6b;">Ajuda</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Suporte</a></li>
                     <li><a href="atendimento.html">Tutorial</a></li>
@@ -88,15 +88,15 @@
         <main class="content">
             <div class="page-header">
                 <div class="page-title">
-                    <h1>Ordens de Serviço</h1>
-                    <div class="breadcrumb">Dashboard / Ordens de Serviço</div>
+                    <h1 style="color: #ffffff;">Ordens de Serviço</h1>
+                    <div class="breadcrumb" style="color: #b9ba6b;">Dashboard / Ordens de Serviço</div>
                 </div>
                 <div class="header-actions-btn">
-                    <button class="btn btn-secondary" onclick="exportarOS()">
+                    <button class="btn btn-secondary" onclick="exportarOS()" style="color: #d1fae5;">
                         📊 Exportar
                     </button>
                     <button class="btn btn-primary" onclick="abrirModal('novaOS')">
-                        ➕ Nova O.S
+                        + Nova O.S
                     </button>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                 <div class="section-header">
                     <h2>Lista de Ordens de Serviço</h2>
                     <div class="table-actions">
-                        <button class="btn btn-secondary" onclick="limparFiltros()">
+                        <button class="btn btn-secondary" onclick="limparFiltros()" style="color: #ffffff;">
                             🔄 Limpar Filtros
                         </button>
                     </div>
@@ -186,15 +186,15 @@
                     <table class="os-table" id="osTable">
                         <thead>
                             <tr>
-                                <th>Número</th>
-                                <th>Cliente</th>
-                                <th>Aparelho</th>
-                                <th>Problema</th>
-                                <th>Status</th>
-                                <th>Prioridade</th>
-                                <th>Data</th>
-                                <th>Prazo</th>
-                                <th>Ações</th>
+                                <th style="color: #ffffff;">Número</th>
+                                <th style="color: #ffffff;">Cliente</th>
+                                <th style="color: #ffffff;">Aparelho</th>
+                                <th style="color: #ffffff;">Problema</th>
+                                <th style="color: #ffffff;">Status</th>
+                                <th style="color: #ffffff;">Prioridade</th>
+                                <th style="color: #ffffff;">Data</th>
+                                <th style="color: #ffffff;">Prazo</th>
+                                <th style="color: #ffffff;">Ações</th>
                             </tr>
                         </thead>
                         <tbody id="osTableBody">
@@ -215,7 +215,7 @@
     <div class="modal" id="modalOS">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="modalTitle">Nova Ordem de Serviço</h2>
+                <h2 id="modalTitle" style="color:#ffffff;">Nova Ordem de Serviço</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 
@@ -224,11 +224,11 @@
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="numeroOS">Número da O.S</label>
+                        <label for="numeroOS" style="color: #ffffff;">Número da O.S</label>
                         <input type="text" id="numeroOS" name="numeroOS" placeholder="Auto-gerado" readonly>
                     </div>
                     <div class="form-group">
-                        <label for="prioridade">Prioridade *</label>
+                        <label for="prioridade" style="color: #ffffff;">Prioridade<span style="color:#b9ba6b;">*</span></label>
                         <select id="prioridade" name="prioridade" required>
                             <option value="">Selecione...</option>
                             <option value="baixa">Baixa</option>
@@ -240,16 +240,16 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="cliente">Cliente *</label>
+                    <label for="cliente" style="color: #ffffff;">Cliente<span style="color: #b9ba6b;">*</span></label>
                     <select id="cliente" name="cliente" required>
-                        <option value="">Selecione o cliente...</option>
+                        <option value="" style="color: #ffffff;">Selecione o cliente...</option>
                         <!-- Opções serão preenchidas via JavaScript -->
                     </select>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="tipoAparelho">Tipo de Aparelho *</label>
+                        <label for="tipoAparelho" style="color: #ffffff;">Tipo de Aparelho<span style="color: #b9ba6b;">*</span></label>
                         <select id="tipoAparelho" name="tipoAparelho" required>
                             <option value="">Selecione...</option>
                             <option value="smartphone">Smartphone</option>
@@ -260,50 +260,50 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="marcaModelo">Marca/Modelo *</label>
+                        <label for="marcaModelo" style="color: #ffffff;">Marca/Modelos<span style="color: #b9ba6b;">*</span></label>
                         <input type="text" id="marcaModelo" name="marcaModelo" placeholder="Ex: iPhone 12 Pro" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="imeiSerial">IMEI/Serial</label>
+                        <label for="imeiSerial" style="color: #ffffff;">IMEI/Serial</label>
                         <input type="text" id="imeiSerial" name="imeiSerial" placeholder="Número de série">
                     </div>
                     <div class="form-group">
-                        <label for="corAparelho">Cor</label>
+                        <label for="corAparelho" style="color: #ffffff;">Cor</label>
                         <input type="text" id="corAparelho" name="corAparelho" placeholder="Ex: Preto, Branco">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="problemaRelatado">Problema Relatado *</label>
+                    <label for="problemaRelatado" style="color: #ffffff;">Problema Relatado<span style="color: #b9ba6b;">*</span></label>
                     <textarea id="problemaRelatado" name="problemaRelatado" rows="4" placeholder="Descreva o problema reportado pelo cliente" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="diagnosticoTecnico">Diagnóstico Técnico</label>
+                    <label for="diagnosticoTecnico" style="color: #ffffff;">Diagnóstico Técnico</label>
                     <textarea id="diagnosticoTecnico" name="diagnosticoTecnico" rows="3" placeholder="Diagnóstico realizado pelo técnico"></textarea>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="prazoEstimado">Prazo Estimado (dias) *</label>
+                        <label for="prazoEstimado" style="color: #ffffff;">Prazo Estimado (dias)<span style="color: #b9ba6b;">*</span></label>
                         <input type="number" id="prazoEstimado" name="prazoEstimado" value="3" min="1" required>
                     </div>
                     <div class="form-group">
-                        <label for="valorOrcamento">Valor do Orçamento</label>
+                        <label for="valorOrcamento" style="color: #ffffff;">Valor do Orçamento</label>
                         <input type="text" id="valorOrcamento" name="valorOrcamento" placeholder="R$ 0,00">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="observacoes">Observações</label>
+                    <label for="observacoes" style="color: #ffffff;">Observações</label>
                     <textarea id="observacoes" name="observacoes" rows="3" placeholder="Informações adicionais sobre a O.S"></textarea>
                 </div>
 
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" onclick="fecharModal()" style="color: #d1fae5;">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="submitBtn">Salvar O.S</button>
                 </div>
             </form>
@@ -314,7 +314,7 @@
     <div class="modal" id="modalVisualizar">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Detalhes da Ordem de Serviço</h2>
+                <h2 style="color: #ffffff;">Detalhes da Ordem de Serviço</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 
@@ -323,7 +323,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="button" class="btn btn-secondary" onclick="fecharModal()">Fechar</button>
+                <button type="button" class="btn btn-secondary" onclick="fecharModal()" style="color: #d1fae5;">Fechar</button>
                 <button type="button" class="btn btn-primary" onclick="editarOSAtual()">Editar</button>
             </div>
         </div>
