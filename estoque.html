@@ -11,8 +11,8 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="logo-section"">
-            <button class="icon-btn" id="menuToggle" style="color: #ffffff;">
+        <div class="logo-section">
+            <button class="icon-btn" id="menuToggle">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -20,11 +20,11 @@
                 </svg>
             </button>
             <div class="logo">
-                <img src="img/Logoatend.png" alt="Logo IA Sistem">
+                <img src="img/ia-system.png" alt="Logo IA Sistem">
             </div>
             <div class="brand">
-                <h2 style="color: #ffffff;">IA SISTEM</h2>
-                <p style="color: #b9ba6b;">Sistema de Gerenciamento</p>
+                <h2>IA SISTEM</h2>
+                <p>Sistema de Gerenciamento</p>
             </div>
         </div>
 
@@ -34,21 +34,21 @@
         </div>
 
         <div class="header-actions">
-            <button class="icon-btn" style="color: #ffffff;">
+            <button class="icon-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                 </svg>
                 <span class="notification-badge">5</span>
             </button>
-            <button class="icon-btn" style="color: #ffffff;">
+            <button class="icon-btn">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <circle cx="12" cy="10" r="3"></circle>
                     <path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.834 2.855"></path>
                 </svg>
             </button>
-            <button class="icon-btn" data-logout title="Sair do Sistema" style="color: #ffffff;">
+            <button class="icon-btn" data-logout title="Sair do Sistema">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -63,7 +63,7 @@
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-section">
-                <div class="sidebar-title" style="color: #b9ba6b;">Módulos</div>
+                <div class="sidebar-title">Módulos</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Dashboard</a></li>
                     <li><a href="atendimento.html">Atendimento</a></li>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title" style="color: #b9ba6b;">Ajuda</div>
+                <div class="sidebar-title">Ajuda</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Suporte</a></li>
                     <li><a href="atendimento.html">Tutorial</a></li>
@@ -88,15 +88,15 @@
         <main class="content">
             <div class="page-header">
                 <div class="page-title">
-                    <h1 style="color: #ffffff;">Estoque</h1>
-                    <div class="breadcrumb" style="color: #b9ba6b;">Dashboard / Estoque</div>
+                    <h1>Estoque</h1>
+                    <div class="breadcrumb">Dashboard / Estoque</div>
                 </div>
                 <div class="header-actions-btn">
-                    <button class="btn btn-secondary" onclick="exportarProdutos()" style="color: #d1fae5;">
+                    <button class="btn btn-secondary" onclick="exportarProdutos()">
                         📊 Exportar
                     </button>
                     <button class="btn btn-primary" onclick="abrirModal('novoProduto')">
-                        +Novo Produto
+                        ➕ Novo Produto
                     </button>
                 </div>
             </div>
@@ -171,8 +171,8 @@
                 <div class="section-header">
                     <h2>Lista de Produtos</h2>
                     <div class="table-actions">
-                        <button class="btn btn-secondary" onclick="limparFiltros()" style="color: #ffffff;">
-                            🔄Limpar Filtros
+                        <button class="btn btn-secondary" onclick="limparFiltros()">
+                            🔄 Limpar Filtros
                         </button>
                     </div>
                 </div>
@@ -181,15 +181,15 @@
                     <table class="products-table" id="productsTable">
                     <thead>
                         <tr>
-                            <th style="color: #ffffff;"">Código</th>
-                            <th style="color: #ffffff;">Produto</th>
-                            <th style="color: #ffffff;">Categoria</th>
-                            <th style="color: #ffffff;">Qtd. Atual</th>
-                            <th style="color: #ffffff;">Mín.</th>
-                                <th style="color: #ffffff;">Preço Custo</th>
-                                <th style="color: #ffffff;">Valor Total</th>
-                            <th style="color: #ffffff;">Status</th>
-                            <th style="color: #ffffff;">Ações</th>
+                            <th>Código</th>
+                            <th>Produto</th>
+                            <th>Categoria</th>
+                            <th>Qtd. Atual</th>
+                            <th>Mín.</th>
+                                <th>Preço Custo</th>
+                                <th>Valor Total</th>
+                            <th>Status</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                         <tbody id="productsTableBody">
@@ -210,7 +210,7 @@
     <div class="modal" id="modalProduto">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="modalTitle" style="color: #ffffff;">Novo Produto</h2>
+                <h2 id="modalTitle">Novo Produto</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 
@@ -219,11 +219,11 @@
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="codigo" style="color: #ffffff;">Código do Produto<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="codigo">Código do Produto *</label>
                         <input type="text" id="codigo" name="codigo" placeholder="Ex: P0001" required>
                     </div>
                     <div class="form-group">
-                        <label for="categoria" style="color: #ffffff;">Categoria<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="categoria">Categoria *</label>
                         <select id="categoria" name="categoria" required>
                             <option value="">Selecione...</option>
                             <option value="Telas">Telas</option>
@@ -237,50 +237,50 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="nome" style="color: #ffffff;">Nome do Produto<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                    <label for="nome">Nome do Produto *</label>
                     <input type="text" id="nome" name="nome" placeholder="Ex: Tela iPhone 12 Pro" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="descricao" style="color: #ffffff;">Descrição<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                    <label for="descricao">Descrição</label>
                     <textarea id="descricao" name="descricao" rows="3" placeholder="Descrição detalhada do produto"></textarea>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="quantidade" style="background-color: #ffffff;">Quantidade Inicial<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="quantidade">Quantidade Inicial *</label>
                         <input type="number" id="quantidade" name="quantidade" value="0" min="0" required>
                     </div>
                     <div class="form-group">
-                        <label for="estoqueMinimo" style="color: #ffffff;">Estoque Mínimo<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="estoqueMinimo">Estoque Mínimo *</label>
                         <input type="number" id="estoqueMinimo" name="estoqueMinimo" value="5" min="0" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="precoCusto" style="color: #ffffff;">Preço de Custo<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="precoCusto">Preço de Custo *</label>
                         <input type="text" id="precoCusto" name="precoCusto" placeholder="R$ 0,00" required>
                     </div>
                     <div class="form-group">
-                        <label for="precoVenda" style="color: #ffffff;">Preço de Venda<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="precoVenda">Preço de Venda *</label>
                         <input type="text" id="precoVenda" name="precoVenda" placeholder="R$ 0,00" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="fornecedor" style="color: #ffffff;">Fornecedor<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="fornecedor">Fornecedor</label>
                         <input type="text" id="fornecedor" name="fornecedor" placeholder="Nome do fornecedor">
                     </div>
                     <div class="form-group">
-                        <label for="localizacao" style="color: #ffffff;">Localização<span style="color: hsl(58, 100%, 50%)">*</span></label>
+                        <label for="localizacao">Localização</label>
                         <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Prateleira A3">
                     </div>
                 </div>
 
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" onclick="fecharModal()" style="color: #d1fae5;">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="submitBtn">Salvar Produto</button>
                 </div>
             </form>

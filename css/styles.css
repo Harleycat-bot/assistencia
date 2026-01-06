@@ -5,15 +5,15 @@
         }
 
         :root {
-            --primary-blue: #1cbf72;
-            --dark-blue: #0F3C4B; /*BARRA LATERAL*/
-            --light-blue: #007BFF;  /*BOTÃO DOS ICONES*/
+            --primary-blue: #0891b2;
+            --dark-blue: #1e3a8a;
+            --light-blue: #0ea5e9;
             --green: #10b981;
             --yellow: #fbbf24;
             --red: #ef4444;
-            --gray-light: #345a7d; /*COR FUNDO PRINCIPAL*/
-            --gray-medium: #445169; /*SUBTITULO DOS ICONES*/
-            --gray-dark: #0F3C4B; /*TITULO DE ALERTAS E NOTIFICAÇÕES*/
+            --gray-light: #f3f4f6;
+            --gray-medium: #9ca3af;
+            --gray-dark: #374151;
         }
 
         body {
@@ -23,16 +23,15 @@
 
         /* HEADER */
         .header {
-            background: #18415b;
+            background: white;
             padding: 15px 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-shadow: 0 2px 4px rgba(255, 3, 3, 0.1);
-            position: fixed;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
             z-index: 100;
-            width: 100%;
         }
 
         .logo-section {
@@ -58,6 +57,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 50%;
             transition: transform 0.3s ease;
         }
 
@@ -194,7 +194,6 @@
         .content {
             flex: 1;
             padding: 30px;
-            width: 100%;
         }
 
         .page-header {
@@ -224,7 +223,7 @@
             background: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(141, 14, 14, 0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             cursor: pointer;
             transition: all 0.3s;
             border: 2px solid transparent;
@@ -264,7 +263,7 @@
             background: white;
             border-radius: 12px;
             padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08); /*FUNDO BRILHANTE*/
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             margin-bottom: 30px;
         }
 
@@ -455,29 +454,24 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #345a7d;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
             align-items: center;
             justify-content: center;
-
         }
 
         .modal.active {
             display: flex;
-            color: white;
-
         }
 
         .modal-content {
-            background: #18415b;
+            background: white;
             border-radius: 12px;
             padding: 30px;
             max-width: 600px;
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
-            margin-top: 100px;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
         }
 
         .modal-header {
@@ -485,11 +479,10 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
-            color: white;
         }
 
         .modal-header h2 {
-            color: white;
+            color: var(--dark-blue);
         }
 
         .close-modal {
@@ -507,7 +500,7 @@
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            color: white;
+            color: var(--gray-dark);
             font-weight: 600;
             font-size: 14px;
         }
@@ -788,12 +781,12 @@
 
         .client-info-large h3 {
             margin: 0;
-            color: white;
+            color: var(--dark-blue);
             font-size: 24px;
         }
 
         .client-type {
-            color: white;
+            color: var(--gray-medium);
             margin: 5px 0 0 0;
         }
 
@@ -801,11 +794,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            color: white;
         }
 
         .detail-item {
-            color: white;
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -817,7 +808,7 @@
 
         .detail-item label {
             font-weight: 600;
-            color: white;
+            color: var(--gray-dark);
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -826,7 +817,6 @@
         .detail-item span {
             color: var(--gray-dark);
             font-size: 14px;
-            color: white;
         }
 
         .pagination {
@@ -872,8 +862,8 @@
         /* Melhorias para logo em diferentes tamanhos */
         @media (max-width: 1200px) {
             .logo {
-                width: 70px;
-                height: 70px;
+                width: 90px;
+                height: 90px;
             }
         }
 
@@ -920,10 +910,4 @@
             .os-table td {
                 padding: 8px;
             }
-          }
-         input::placeholder{
-            color: #9e9e9e;
-            opacity: 1;
-         }
-
-      
+        }
